@@ -96,7 +96,7 @@ function createCommandHTML(cmd) {
                     <h4 class="text-xl font-semibold mb-2">${cmd.name}</h4>
                     <p class="text-white/70">${cmd.description}</p>
                 </div>
-                <span class="px-3 py-1 bg-red-500/20 text-red-400 rounded-lg text-sm">
+                <span class="px-3 py-1 bg-pink-500/20 text-pink-400 rounded-lg text-sm">
                     ${cmd.permission}
                 </span>
             </div>
@@ -489,7 +489,7 @@ function initializeWebsite() {
 async function updateGitHubStats() {
   try {
     const response = await fetch(
-      "https://api.github.com/repos/redolenthalo/discord-bot-website-template",
+      "https://api.github.com/repos/fexncns/discord-landing",
     );
     const data = await response.json();
 
